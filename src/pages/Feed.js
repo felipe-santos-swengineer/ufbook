@@ -6,12 +6,11 @@ import "./Feed.css"
 //navbar imports
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Button from 'react-bootstrap/Button';
 
-import { BrowserRouter, Switch, Route, Link }from "react-router-dom"
+//dropdown imports
+import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton'
+
 
 class Feed extends Component{
     render(){
@@ -24,6 +23,11 @@ class Feed extends Component{
               <Nav.Link href="/Feed">Feed</Nav.Link>
               <Nav.Link href="/Mensagens">Mensagens</Nav.Link>
             </Nav>
+            <DropdownButton id="dropdown-basic-button" title="">
+              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </DropdownButton>
           </Navbar>
         </div>
       )
